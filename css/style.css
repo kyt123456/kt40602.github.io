@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: rgb(48, 145, 201);
+  color:white;
+  padding: 1em;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+nav a{
+  color: lightgray;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: rgb(48, 145, 201);
+  color:white;
+  padding: 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********** Splash Page ************************/
+header {
+  background: linear-gradient(to right, #4a90e2, #9013fe); 
+  color: white;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: #2c3e50;
+  margin: 0.5em 0;
+}
+
+header img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 1em;
+}
+
+.address {
+ font-size: 0.9em;
+ color: #555;
+ text-align:center;
+ margin-top: 1em;
+}
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  color:#9013fe;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+  margin: 0.5em 0 0.25em;
+  
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.4em 1.25em;
+  align-items: start;
+  margin: 0.5em 0 1.25em;
+}
+
+section ul {
+  list-style: discs;
+  padding-left: 1.25rem;
+  margin: 0.25em 0 1.25em;
+
+}
+
+section a {
+  color: #1e90ff;
+  text-decoration: none;
+
+}
+
+section a:hover {
+  color: #9013fe;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+  gap: 1.25rem;                                     
+  margin: 1.5rem auto;                              
+  padding: 0 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;          
+  object-fit: cover;      
+  display: block;
+  flex-shrink: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  padding: 1rem 1rem 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;          
+    text-align: center;
+    padding: 0.75rem 1rem;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 1rem auto;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+max-width: 560px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+}
+
+input {
+  font: inherit;
+
+}
+
+textarea {
+   width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
