@@ -45,7 +45,7 @@ header {
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
-  color: #2c3e50;
+  color: #ffffff;
   margin: 0.5em 0;
 }
 
@@ -76,15 +76,13 @@ hr {
 
 }
 
-
-section {
-  padding-left: 1.25rem;      
-  padding-right: 1.25rem;     
-  max-width: 1100px;         
-  margin-left: auto;          
-  margin-right: auto;         
+section{
+  padding-left: 1.25rem;
 }
 
+section h2 {
+  text-align: center;
+}
 
 section h3 {
   font-family: 'Playfair Display', serif;
@@ -103,7 +101,7 @@ section dl {
 }
 
 section ul {
-  list-style: discs;
+  list-style: disc;
   padding-left: 1.25rem;
   margin: 0.25em 0 1.25em;
 
